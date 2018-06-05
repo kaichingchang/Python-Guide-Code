@@ -106,25 +106,11 @@ class EncryptController:
 
   # 按下清除按鈕的事件
   def cm(self):
-    self.e = None
-    self.userinput = ""
-    self.result = ""
-    self.app.ifd.delete(0, 200)
-    self.app.ofd.delete(0, 200)
-
-    self.app.dt["text"] = "已清除！"
+    self.app.dt["text"] = "觸發清除按鈕的事件。"
 
   # 按下拷貝按鈕的事件
   def cm2(self):
-    if self.result == "":
-      m = "無法拷貝！"
-      self.app.dt["text"] = m
-    else:
-      self.app.clipboard_clear()
-      r = self.result
-      self.app.clipboard_append(r)
-      m = "已拷貝！"
-      self.app.dt["text"] = m
+    self.app.dt["text"] = "觸發拷貝按鈕的事件。"
 
 # 執行部分
 if __name__ == '__main__':
