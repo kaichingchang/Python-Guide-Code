@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>輸入英文句子</title>
+  <style>
+    body {
+      background-color: black;
+    }
+    h1 {
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      background-color: gray;
+    }
+    form {
+      margin: 10px;
+      padding: 10px;
+      color: white;
+      background-color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>輸入英文句子</h1>
+
+  <form action="./result/" method="post">
+  {% csrf_token %}
+  <label>請輸入英文句子：</label><input size="50" type="text" name="original_text"><br />
+  <input type="submit" value="送出" />
+  </form>
+</body>
+
+<!-- 檔名： input.html -->
+<!-- 作者： Kaiching Chang -->
+<!-- 時間： June, 2018 -->
