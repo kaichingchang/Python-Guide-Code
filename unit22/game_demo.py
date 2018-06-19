@@ -12,6 +12,6 @@ result = Label(root, text="", width="10")
 result.grid(row=1, column=0, columnspan=3)
 root.mainloop()
 
-# 檔名: hello_demo3.py
+# 檔名: game_demo.py
 # 作者: Kaiching Chang
-# 時間: May, 2018
+# 時間: June, 2018
