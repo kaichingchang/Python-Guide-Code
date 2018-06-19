@@ -16,4 +16,4 @@ root.mainloop()
 
 # 檔名: hello_demo3.py
 # 作者: Kaiching Chang
-# 時間: May, 2018
+# 時間: June, 2018
